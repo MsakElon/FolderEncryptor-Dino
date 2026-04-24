@@ -15,8 +15,10 @@
 
 | 文件 | 说明 | 大小 |
 | --- | --- | ---: |
-| [`dist/FolderEncryptor_Dino_SmartSetup.exe`](./dist/FolderEncryptor_Dino_SmartSetup.exe) | 安装版，适合常规使用 | 69.7 MB |
-| [`dist/FolderEncryptor_V5_Dino.exe`](./dist/FolderEncryptor_V5_Dino.exe) | 便携版，适合直接运行 | 34.9 MB |
+| [`FolderEncryptor_Dino_SmartSetup.exe`](https://github.com/MsakElon/FolderEncryptor-Dino/raw/main/dist/FolderEncryptor_Dino_SmartSetup.exe) | 安装版，适合常规使用 | 69.7 MB |
+| [`FolderEncryptor_V5_Dino.exe`](https://github.com/MsakElon/FolderEncryptor-Dino/raw/main/dist/FolderEncryptor_V5_Dino.exe) | 便携版，适合直接运行 | 34.9 MB |
+
+点击文件名即可直接下载对应版本。
 
 ## SHA256 校验
 

@@ -1,3 +1,5 @@
+简体中文 | [English](./README.en.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md)
+
 # Folder Encryptor V5
 
 `Folder Encryptor V5` 是一个面向 Windows 的轻量级文件夹加密小工具。
@@ -91,7 +93,11 @@ EB1A4C324AAE3372214E1A6C904B67472FCB626B3D071165C97533DEC33ECE52  dist/FolderEnc
 
 ## 仓库内容
 
-- [详细使用说明](./docs/usage-guide.md)
+- 使用说明：
+- [简体中文](./docs/usage-guide.md)
+- [English](./docs/usage-guide.en.md)
+- [日本語](./docs/usage-guide.ja.md)
+- [한국어](./docs/usage-guide.ko.md)
 - [校验信息](./checksums.txt)
 
 ## 当前状态

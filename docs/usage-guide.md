@@ -1,3 +1,5 @@
+简体中文 | [English](./usage-guide.en.md) | [日本語](./usage-guide.ja.md) | [한국어](./usage-guide.ko.md)
+
 # Usage Guide
 
 ## 适用对象

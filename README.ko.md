@@ -1,0 +1,117 @@
+[简体中文](./README.md) | [English](./README.en.md) | [日本語](./README.ja.md) | 한국어
+
+# Folder Encryptor V5
+
+`Folder Encryptor V5`는 Windows용 경량 폴더 암호화 도구입니다.
+
+이 저장소는 바로 사용할 수 있는 배포 패키지와 문서를 제공하여 다운로드, 체험, 공유를 더 쉽게 할 수 있도록 구성되어 있습니다. 소스 코드, 라이선스 상세 정보, 더 완전한 기술 문서는 앞으로 계속 정리될 예정입니다.
+
+## 소프트웨어 개요
+
+- Windows 데스크톱 환경용 폴더 암호화 및 복호화 도구
+- 설치형과 포터블 버전을 모두 제공
+- 수동 비밀번호 입력과 강력한 랜덤 비밀번호 생성 지원
+- 랜덤 비밀번호 생성 시 데스크톱의 텍스트 파일에 비밀번호 백업을 계속 추가 저장
+
+## 다운로드
+
+| 파일 | 설명 | 크기 |
+| --- | --- | ---: |
+| [`FolderEncryptor_Dino_SmartSetup.exe`](https://github.com/MsakElon/FolderEncryptor-Dino/raw/main/dist/FolderEncryptor_Dino_SmartSetup.exe) | 일반 사용에 적합한 설치형 버전 | 69.7 MB |
+| [`FolderEncryptor_V5_Dino.exe`](https://github.com/MsakElon/FolderEncryptor-Dino/raw/main/dist/FolderEncryptor_V5_Dino.exe) | 바로 실행 가능한 포터블 버전 | 34.9 MB |
+
+파일명을 클릭하면 바로 다운로드할 수 있습니다.
+
+## 핵심 기능
+
+- 대상 폴더를 선택하여 암호화 또는 복호화
+- 직접 마스터 비밀번호 입력 가능
+- `随机生成` 버튼으로 강력한 비밀번호 즉시 생성
+- 랜덤 비밀번호를 데스크톱에 자동 백업
+- 여러 번 생성해도 이전 내용을 덮어쓰지 않고 같은 백업 파일에 계속 추가
+
+## 랜덤 비밀번호와 백업
+
+직접 비밀번호를 설정하고 싶지 않다면 앱의 `随机生成` 버튼을 클릭하면 됩니다.
+
+프로그램은 다음을 수행합니다.
+
+1. 강력한 비밀번호를 자동 생성
+2. 생성된 비밀번호를 데스크톱의 백업 텍스트 파일에 저장
+3. 이후 다시 생성해도 기존 내용을 덮어쓰지 않고 같은 파일에 계속 추가
+
+예시:
+
+```text
+【V5 专属加密密码备份】
+密码: euZi^oahxuKq2Zm6
+
+【V5 专属加密密码备份】
+密码: JSE7CWTg54#CSH!Q
+```
+
+암호화가 끝난 뒤에는 백업 파일을 안전한 위치에 보관하고, 암호화된 파일과 오랫동안 같은 위치에 두지 않는 것을 권장합니다.
+
+## 빠른 시작
+
+### 1. 버전 선택
+
+- 일반 설치를 원하면 `FolderEncryptor_Dino_SmartSetup.exe`
+- 설치 없이 바로 사용하고 싶다면 `FolderEncryptor_V5_Dino.exe`
+
+### 2. 폴더 암호화
+
+권장 절차:
+
+1. `Folder Encryptor V5` 실행
+2. `Target Folder / 目标文件夹` 에서 보호할 폴더 선택
+3. `Master Password / 安全密码` 에 비밀번호를 입력하거나 `随机生成` 클릭
+4. `隐形加密 (Encrypt)` 클릭
+5. 처리 완료 후 결과 확인
+
+### 3. 폴더 복호화
+
+1. `Folder Encryptor V5` 실행
+2. 이미 암호화된 폴더 선택
+3. 올바른 비밀번호 입력
+4. `一键还原 (Decrypt)` 클릭
+5. 파일이 정상적으로 복원되었는지 확인
+
+## SHA256 체크섬
+
+```text
+F656ABB26310F83526EEBEDC685ABDD9D79D12672882D8E38D902D30D3AE50A1  dist/FolderEncryptor_Dino_SmartSetup.exe
+EB1A4C324AAE3372214E1A6C904B67472FCB626B3D071165C97533DEC33ECE52  dist/FolderEncryptor_V5_Dino.exe
+```
+
+## 사용 권장 사항
+
+- 중요한 데이터를 다루기 전에 테스트용 폴더로 전체 흐름을 먼저 확인하세요
+- 중요한 파일을 작업하기 전 추가 백업을 권장합니다
+- 랜덤 비밀번호를 사용했다면 데스크톱에 생성된 백업 파일을 잘 보관하세요
+- 현재 공개 버전은 주로 Windows 환경을 대상으로 합니다
+
+## 저장소 구성
+
+- 사용 가이드:
+- [简体中文](./docs/usage-guide.md)
+- [English](./docs/usage-guide.en.md)
+- [日本語](./docs/usage-guide.ja.md)
+- [한국어](./docs/usage-guide.ko.md)
+- [체크섬](./checksums.txt)
+
+## 현재 상태
+
+이 저장소는 먼저 사용할 수 있는 공개 버전을 제공하고, 이후 오픈소스 자료를 계속 보완하는 형태로 운영되고 있습니다.
+
+즉:
+
+- 지금 바로 배포 파일을 다운로드하여 사용할 수 있습니다
+- 문서는 공개 공유에 적합한 수준까지 정리되어 있습니다
+- 소스 코드와 기술 문서는 이후 더 정리될 수 있습니다
+
+## 라이선스
+
+이 프로젝트는 [MIT License](./LICENSE)를 따릅니다.
+
+원래 라이선스 고지를 유지하는 한 자유롭게 사용, 복제, 수정, 배포할 수 있으며, 프로젝트는 어떠한 보증 없이 제공됩니다.

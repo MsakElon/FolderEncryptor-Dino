@@ -30,6 +30,31 @@ Click a file name to download it directly.
 - Automatically save random-password backups to the desktop
 - Multiple generations are appended to the same backup file instead of overwriting old records
 
+## Stealth Encryption
+
+`Folder Encryptor V5` is suitable for stealth-encryption scenarios.
+
+Its behavior is:
+
+- After encryption, the folder structure and file names usually remain unchanged, so the outside appearance looks similar
+- However, the file contents are replaced with encrypted data
+- Until the correct password is used to restore them, those files will usually fail to open, or appear garbled, corrupted, or unreadable
+- This is useful when you want files to appear to stay in place while their actual contents are protected
+
+## How The Encryption Works
+
+This is not simple text obfuscation. It encrypts the byte content of files.
+
+High-level flow:
+
+1. Recursively walk through the files in the target folder
+2. Read each file as full binary data
+3. Use the user password together with a random `salt` and derive a key via `PBKDF2-HMAC-SHA256`
+4. Use `cryptography.fernet.Fernet` to encrypt the file content and provide integrity protection
+5. Write the encrypted result back to the original file path, so file names and folder structure usually stay the same
+
+During decryption, the same password is used to derive the key again and restore the original file content.
+
 ## Random Password and Backup
 
 If you do not want to create a password manually, just click the `随机生成` button in the app.

@@ -28,6 +28,33 @@ The main interface includes:
 - `隐形加密 (Encrypt)`: run encryption
 - `一键还原 (Decrypt)`: run decryption
 
+## What Stealth Encryption Means
+
+One of the key ideas behind `Folder Encryptor V5` is stealth encryption.
+
+Here, "stealth" mainly means:
+
+- File names and folder structure usually stay unchanged after encryption
+- From the outside, the folder still looks like the original one
+- But the file content has already been turned into ciphertext
+- Without the correct password, files will usually fail to open or appear garbled, corrupted, or unreadable
+
+This makes it suitable for quietly protecting file contents instead of turning them into an obviously separate encrypted archive.
+
+## Technical Overview
+
+Technically, this is not simple text replacement or scrambling. It encrypts the full content of each file.
+
+High-level flow:
+
+1. Recursively scan files in the target folder
+2. Read each file as full binary data
+3. Use the password and a random `salt` to derive a key with `PBKDF2-HMAC-SHA256`
+4. Use `cryptography.fernet.Fernet` to encrypt the file content and protect integrity
+5. Write the encrypted data back to the original file path
+
+So what is protected is the actual file content, not just text inside text files.
+
 ## Random Password Generation
 
 If you do not want to set a password manually, click `随机生成`.
